@@ -3,37 +3,58 @@
  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css" media="all">
-    <link rel="stylesheet" href="styles/objects.css" media="all">
-    <link rel="stylesheet" href="styles/screens.css" media="screen">
+
+    <!-- ====== Estilos ====== -->
+    <link rel="stylesheet" href="styles/style.css" media="all">  <!-- Estilo geral -->
+    <link rel="stylesheet" href="styles/objects.css" media="all">  <!-- Classes e Ids -->
+    <link rel="stylesheet" href="styles/screens.css" media="screen"> <!-- Media Queries -->
+
+    <!-- Ícone do google fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+
     <title>Loja de itens</title>
  </head>
  <body>
     <header>
-
+        <!-- ====== Região com a logo de os links na esquerda ====== -->
         <div class="header-wrapper-left">
+
+            <!-- O container da Logo -->
             <section id="logo-container">
                 <a id="logo" href="#" title="Ir para a página inicial" rel="prev">My Store</a>
             </section>
             
+            <!-- O container dos links -->
             <section class="links-container">
                 <a class="header-links" href="#"  title="Pesquise nossos produtos" rel="next">Procurar</a>
                 <a class="header-links" href="#" title="Confira os mais populares" rel="next">Em alta</a>
             </section>
         </div>
 
+        <!-- ====== Região com a logo de os links na direita ====== -->
         <div class="header-wrapper-right">
+
+            <!-- O container dos links -->
             <section class="links-container">
                 <a class="header-links" href="#" title="Veja seus itens selecionados" rel="next">Carrinho</a>
                 <a class="header-links" href="#" title="Vá à área de pagamento" rel="next">Finalizar compra</a>
             </section>
-            <a href=""><span class="material-symbols-outlined" id="menu">menu</span></a>
+
+            <!-- Menu hambúrguer escondido -->
+            <a href="#"><span class="material-symbols-outlined" id="menu">menu</span></a>
         </div>
     </header>
 
     <main>
+        <!--- ====== A lista de produtos ====== -->
         <section class="products-list">
+
+            <!--
+                Cada <article> é um produto, e segue a estrutura:
+                    - img: imagem do produto
+                    - span.model: o modelo do produto
+                    - span.price: o preço do produto
+            -->
 
             <article class="product">
                 <img height="270px" src="images/t-shirt.png" alt="Camiseta branca">
@@ -134,7 +155,7 @@
     </main>
 
     <footer>
-        
+
     </footer>
  </body>
  </html>

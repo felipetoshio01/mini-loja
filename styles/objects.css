@@ -6,28 +6,32 @@
 }
 
 /* ====== Classes/Ids do Header ====== */
+
+/* Container esquerdo, com a logo */
 .header-wrapper-left {
     display: flex;
     align-items: center;
     gap: 0.75em;
 }
 
-
+/* Container direito */
 .header-wrapper-right {
     display: flex;
     align-items: center;
 }
 
-
+/* A logo "My store" */
 #logo {
     text-decoration: none;
     font: normal bold 2em var(--logo-font);
 }
 
+/* Menu hambúrguer; inicialmente escondido */
 #menu {
     display: none;
 }
 
+/* Os links presentes no Header */
 .header-links {
     font: normal normal 1em var(--text-font);
     border-radius: 1em;
@@ -43,11 +47,6 @@
 /* ====== Classes/Ids do Main ====== */
 .products-list {
     display: grid;
-    /* Auto-fit:
-    Faz o grid criar o máximo de colunas possíveis, desde que os itens caibam. Por exemplo, repeat(auto-fit, 250px) faz com que o navegador gere o máximo de colunas de 250px possíveis.
-
-    Agora, com minmax(250px, 1fr), o item vai crescer ao máximo (pois sempre divide a tela em 2) e diminuir até atingir 250px. Assim, não há espaço em branco.
-    */
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-auto-rows: 1fr;
     justify-content: center;  
@@ -55,6 +54,7 @@
     padding: 1em 0em;
 }
 
+/* O container que guarda o produto */
 .product {
     display: flex;
     flex-flow: column;
@@ -70,12 +70,14 @@
     transform: translateY(-5px);
 }
 
+/* O texto do modelo do produto */
 .model {
     font: normal 500 1em var(--text-font);
     text-align: center;
     margin: 0.5em 0em;
 }
 
+/* O preço do produto */
 .price {
     font: normal 600 1.1em var(--text-font)
 }
