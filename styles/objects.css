@@ -31,8 +31,19 @@
 }
 
 /* Menu hambúrguer; inicialmente escondido */
-#menu {
+.menu-icon-container {
     display: none;
+    border-radius: 1em;
+    padding: 0.5em;
+}
+
+.menu-icon-container:hover {
+    background-color: var(--color-hover);
+}
+
+#menu {
+    display: grid;
+    place-items: center;
 }
 
 /* Os links presentes no Header */
